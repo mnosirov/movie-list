@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kinolar</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="bg-info">
+
+  <div class="container">
+    <h1 class="h1 text-white text-center">Kinolar ro'yhati</h1>
+    <ul class="list-unstyled  d-flex justify-content-around flex-wrap js-movies-list"></ul>
+  </div>
+
+  <template id="movie">
+    <ul class="movie list-group-item flex-shrink-0 d-flex flex-column overflow-hidden item-width my-2">
+
+      <div class="d-flex align-items-center">
+        <span class="h5 mb-0 mr-2 flex-shrink-0">Kino nomi : </span>
+        <p class="movie-title h5 text-dark mb-0 text-truncate" title=""></p>
+      </div>
+
+      <div class="d-flex align-items-center">
+        <span class="mr-1">Sanasi : </span>
+        <p class="movie-year small text-dark mb-0">2010</p>
+      </div>
+
+      <div class="d-flex">
+        <span class="flex-shrink-0 mr-2">Janr : </span>
+        <div class="movie-genre text-truncate"></div>
+      </div>
+
+      <p class="h3 text-dark">Actors</p>
+      <ul class="actors-list list-group"></ul>
+
+    </ul>
+  </template>
+
+  <script src="./js/util.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="./js/kinolar.js"></script>
+  <script src="./js/scripts.js"></script>
+
+</body>
+
+</html>
